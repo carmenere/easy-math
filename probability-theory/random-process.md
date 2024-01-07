@@ -14,6 +14,11 @@ Often **index set** the interpretation of **time**.<br>
 ## One-dimensional random walk
 **One-dimensional random walk** is the **random walk** on the integer number line `Z` which starts at `0`, and at each step **particle** moves `+1` or `−1` with **equal probability** (`1/2`).<br>
 
+### Example
+![CDF of arcsine distribution](/img/rand_walk.jpeg)
+
+<br>
+
 How long will the **particle** be **above** or **below** the x-axis during its walk?<br>
 
 Answer `1/2` is **wrong**! The most time **particle** will spend a **significant part** of its time in any one half-plane. This is known as **Paul Levy arcsine law**.<br>
