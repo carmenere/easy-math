@@ -40,7 +40,6 @@ When `Ω` is **uncontinue**, the `𝒫(Ω)` is `borel σ-algebra`.<br>
 <br>
 
 ## Probability measure
-probability_space_measure
 ![probability_space_measure](/img/probability_space_measure.jpeg)
 
 <br>
