@@ -26,3 +26,10 @@ Example, consider set `A = {1,3,5}`, then
 - **Null set** `∅` is a **subset** of any set.
 - If set `B` is a **subset** of set `A`, then `B ∩ A = B`.
 - If set `B` is a **subset** of set `A`, then `B ∪ A = A`.
+
+<br>
+
+# Disjoint sets
+Two sets are said to be **disjoint sets** if they **have no element in common**.<br>
+Equivalently, **two disjoint sets are sets whose intersection is the empty set**.<br>
+For example, `{1, 2, 3}` and `{4, 5, 6}` are **disjoint sets**, while `{1, 2, 3}` and `{3, 4, 5}` are **not disjoint**.<br>
