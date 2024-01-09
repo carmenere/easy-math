@@ -2,7 +2,7 @@
 **Empty set** (aka **null set**) is a set that doesn't contain any values or elements. It is expressed as `{}` or `∅`.<br>
 **Singleton** ia s set which has only one element, e.g. `{x}`.<br>
 
-A set `B` is the **subset** of another set `A`, if every element of set `B` is also an element of set `A`, denoted by `B ⊆ A`. Formal defenition: `B ⊆ A, if ∀ b∈B ⇒ b∈A`.<br>
+A set `B` is the **subset** of another set `A`, if every element of set `B` is also an element of set `A`, denoted by `B ⊆ A`. Formal defenition: `B ⊆ A, if ∀ b ∈ B ⇒ b∈A`.<br>
 `A` is called a **superset** of set `B` and denoted `A ⊇ B`.<br>
 
 A set `B` is the **proper subset** of another set `A`, if `A` **not** equal to `B`, denoted by `B ⊊ A`. Formal defenition: `B ⊊ A, if B ⊆ A and B ≠ A`.<br>
