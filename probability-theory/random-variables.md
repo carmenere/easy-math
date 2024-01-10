@@ -58,6 +58,34 @@ Relationship:
 
 <br>
 
+Any **probability distribution** defines a **probability measure**.<br>
+**Probability distributions** is defined in different ways for **discrete** or **continuous** variables.<br>
+
+Both can be described by **cumulative distribution function** (**CDF**). **CDF** describes the **probability** that the **random variable** is **no larger** than a **given value**.<br>
+
+Also:
+- **continuous** probability distributions can also be described by the **probability density function** (**PMF**).
+- **discrete** probability distributions can also be described by the **probability mass function** (**PDF**).
+
+<br>
+
+The **probability** that the **outcome lies in a given interval** can be computed by integrating the **PDF** over that interval.
+
+<br>
+
+## Examples
+### PDF
+![PDF](/img/pspace_pdf.jpeg)
+
+<br>
+
+### CDF
+![CDF](/img/pspace_cdf.jpeg)
+
+The value at `a` equals the **area** under the **probability density** curve **to the left of** `a`.
+
+<br>
+
 # Expected value
 **Expected value** (or **first moment**) is the **arithmetic mean** of the possible values a random variable can take, weighted by the probability of those outcomes.<br>
 Denoted `E(X)`, `E[X]`, `EX` or `M[X]`.<br>

@@ -2,7 +2,7 @@
 **Empty set** (aka **null set**) is a set that doesn't contain any values or elements. It is expressed as `{}` or `∅`.<br>
 **Singleton** ia s set which has only one element, e.g. `{x}`.<br>
 
-A set `B` is the **subset** of another set `A`, if every element of set `B` is also an element of set `A`, denoted by `B ⊆ A`. Formal defenition: `B ⊆ A, if ∀ b∈B ⇒ b∈A`.<br>
+A set `B` is the **subset** of another set `A`, if every element of set `B` is also an element of set `A`, denoted by `B ⊆ A`. Formal defenition: `B ⊆ A, if ∀ b ∈ B ⇒ b∈A`.<br>
 `A` is called a **superset** of set `B` and denoted `A ⊇ B`.<br>
 
 A set `B` is the **proper subset** of another set `A`, if `A` **not** equal to `B`, denoted by `B ⊊ A`. Formal defenition: `B ⊊ A, if B ⊆ A and B ≠ A`.<br>
@@ -26,3 +26,10 @@ Example, consider set `A = {1,3,5}`, then
 - **Null set** `∅` is a **subset** of any set.
 - If set `B` is a **subset** of set `A`, then `B ∩ A = B`.
 - If set `B` is a **subset** of set `A`, then `B ∪ A = A`.
+
+<br>
+
+# Disjoint sets
+Two sets are said to be **disjoint sets** if they **have no element in common**.<br>
+Equivalently, **two disjoint sets are sets whose intersection is the empty set**.<br>
+For example, `{1, 2, 3}` and `{4, 5, 6}` are **disjoint sets**, while `{1, 2, 3}` and `{3, 4, 5}` are **not disjoint**.<br>
