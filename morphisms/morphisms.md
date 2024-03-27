@@ -35,7 +35,8 @@ A functor `F` from a category `C` to a category `D` is a **map** sending each ob
 1. **Epimorphism** is a **surjective** *homomorphism*.
 2. **Monomorphism** is an **injective** *homomorphism*.
 3. **Isomorphism** is a **bijective** *homomorphism*.
-4. **Automorphism** is an **isomorphism** from a structure to **itself**.
+4. **Endomorphism** is a *homomorphism* from **some structure** to **itself**.
+5. **Automorphism** is a **bijective endomorphism**, in other words it's **isomorphism** from **some structure** to **itself**.
 
 <br>
 
