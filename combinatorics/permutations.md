@@ -65,7 +65,7 @@ Consider **3** another sets: `X = {x1,x2,x3}`, `Y = {y1,y2}`, `Z = {z1}`.<br>
 - `(x3,y2,z1)`
 
 Consider we can assign to `xi`, `yi` and `zi` values from the set `A`.<br>
-Then, if we **require** that `xi ≠ yi`, `yi ≠ zi`, `xi ≠ xi` it will the **same as** we choose **3-tuples** *without repetitions* from `A`.<br>
+Then, if we **require** that `xi ≠ yi`, `yi ≠ zi`, `xi ≠ zi` it will the **same as** we choose **3-tuples** *without repetitions* from `A`.<br>
 
 <br>
 
