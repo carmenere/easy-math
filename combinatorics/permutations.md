@@ -147,3 +147,23 @@ Acording **MP** the **total number** of all **3-tuples** `(a,b,c)` is equal to t
 Consider finite set `A = {1,2, ..., n}, |A| = n`. Find all **k-tuples** *with repetitions* from `A`.<br>
 Then:
 - `P̄(n,k) = A x A x ... x A = |A| * |A| * ... * |A| = n^k`
+
+<br>
+
+# Permutations of multisets
+If `M` is a finite **multiset**, then a **multiset permutation** is an **ordered arrangement** of elements of all `M`.<br>
+The **number of occurrences** of a specific element in `M` is called its **multiplicity**.
+
+<br>
+
+## Formulas
+If the **multiplicities** of the elements of `M` are `m1`, `m2`, ..., `mk` and their sum (that is, the size of M) is `n` then the number of **multiset permutations** of `M` is
+`n!/(m1!*m2!*...*mk!)`. It is called **multinomial coefficient**.<br>
+
+<br>
+
+## Number of ways to put objects into bins
+The number of ways to put objects into bins is given by the *multinomial coefficient*: `n!/(m1!*m2!*...*mk!)`, where
+- `k` is a **number of bins**;
+- `ki` is a **number of eleemnts in bin** `i`;
+- `n` is is the **number of all items**;
