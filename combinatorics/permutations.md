@@ -52,11 +52,11 @@ The **total number** by **MP** of all **3-tuples** `(a,b,c)` *without repetition
 
 <br>
 
-After all steps we get 3 sets: `A = {1,2,3}`, `B = {1,2}`, `C = {1}`.<br>
-We see that choice in next step is **independent** from all choices in previous steps. It implies **MP**.<br>
-Consider 3 another sets: `X = {x1,x2,x3}`, `Y = {y1,y2}`, `Z = {z1}`.<br>
+After all steps we get **3** sets: `A = {1,2,3}`, `B = {1,2}`, `C = {1}`. We see that choice in next step is **independent** from all choices in previous steps. It implies **MP**.<br>
 
-Using **MP** we see than we have 6 **3-tuples** `(x,y,z)` *without repetitions* from `X x Y x Z`:
+Consider **3** another sets: `X = {x1,x2,x3}`, `Y = {y1,y2}`, `Z = {z1}`.<br>
+
+**MP** gives **6** following *3-tuples* `(x,y,z)` *without repetitions* from `X x Y x Z`:
 - `(x1,y1,z1)`
 - `(x1,y2,z1)`
 - `(x2,y1,z1)`
@@ -64,9 +64,8 @@ Using **MP** we see than we have 6 **3-tuples** `(x,y,z)` *without repetitions* 
 - `(x3,y1,z1)`
 - `(x3,y2,z1)`
 
-<br>
-
-If we require that xi ≠ yi, yi ≠ zi, xi ≠ xi then it is the same as we choose **3-tuples** *without repetitions* from `A`.<br>
+Consider we can assign to `xi`, `yi` and `zi` values from the set `A`.<br>
+Then, if we **require** that `xi ≠ yi`, `yi ≠ zi`, `xi ≠ xi` it will the **same as** we choose **3-tuples** *without repetitions* from `A`.<br>
 
 <br>
 
