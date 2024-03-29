@@ -158,7 +158,9 @@ The **number of occurrences** of a specific element in `M` is called its **multi
 
 ## Formulas
 If the **multiplicities** of the elements of `M` are `m1`, `m2`, ..., `mk` and their sum (that is, the size of M) is `n` then the number of **multiset permutations** of `M` is
-`n!/(m1!*m2!*...*mk!)`. It is called **multinomial coefficient**.<br>
+- `n!/(m1!*m2!*...*mk!)`
+
+It is called **multinomial coefficient**.<br>
 
 <br>
 
