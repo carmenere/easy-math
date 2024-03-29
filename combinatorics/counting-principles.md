@@ -34,8 +34,7 @@
 <br>
 
 The **Cartesian product** is the basis for the **MP**.<br>
-To choose one of `A = {a,b,c}` **and** after such choose to choose one of `B = {1,2}` is the **same as** to choose one of `R = {(a,1), (a,2), (b,1), (b,2), (c,1), (c,2)}`.<br>
-The sets `A` and `B` in this example are disjoint sets, but that is not necessary.<br>
+To choose one of `A = {a,b,c}` **and** after such choose to choose one of `B = {1,2}` is the **same as** to choose one of `R = {(a,1), (a,2), (b,1), (b,2), (c,1), (c,2)}`. The sets `A` and `B` in this example are disjoint sets, but that is not necessary.<br>
 
 The number of ways to choose **ordered pair with repetitions** from `{a,b,c}` is the same as number of ways to choose element from `{a,b,c} x {a,b,c} = {(a,a), (a,b), (a,c), (b,a), (b,b),(b,c),(c,a),(c,b),(c,c)}`.
 
