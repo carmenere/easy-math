@@ -167,5 +167,5 @@ It is called **multinomial coefficient**.<br>
 ## Number of ways to put objects into bins
 The number of ways to put objects into bins is given by the *multinomial coefficient*: `n!/(m1!*m2!*...*mk!)`, where
 - `k` is a **number of bins**;
-- `ki` is a **number of eleemnts in bin** `i`;
+- `mi` is a **number of eleemnts in bin** `i`;
 - `n` is is the **number of all items**;
