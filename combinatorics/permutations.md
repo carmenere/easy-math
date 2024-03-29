@@ -125,8 +125,8 @@ The **number** of such **k-permutations** is denoted as `P̄(n,k)`.<br>
 <br>
 
 ## Proofs
-When we form **k-permutation of n** *with repetitions* we **return** back selected element to original set.<br>
-So, on every step we use the original set and its cardinality isn't changed.
+When we form **k-permutation of n** *with repetitions* we **return** back selected element to **original set**.<br>
+So, on every step we use the **original set** and its cardinality isn't changed.
 
 Example, consider set `A = {1,2,3,4,5}, |A| = 3`. Find number of all **3-tuples** `(a,b,c)` **with repetitions** from `A`. <br>
 Let's divide problem into **3** disjoint cases:<br>
