@@ -1,11 +1,12 @@
-# Basics
-A **set**, *informally*, is a **collection of objects**.<br>
-The objects in a *set* are called its **elements**. If `a` is a **member** (or **element**) of `A`, the notation `a ∈ A` is used.<br>
+# Sets
+A **set**, *informally*, is a **collection** of **elements** (**objects**) that is **unordered** and has **no duplicate** elements.<br>
+**Unorderedness**: `{1, 2, 3}` is the **same** as `{3, 2, 1}`, i.e. `{1, 2, 3} = {3, 2, 1}`.<br>
+**Notation**:
+- `∈` (**element of** symbol): if `a` is a **member** (or **element**) of `A` (`a` is **contained** in `A`, `a` **belongs** to `A`), it is written as `a ∈ A`;
+- `{ }` (**curly braces**) to describe sets, there are 2 approaches to describe sets:
+  - by **listing all elements** surrounded with `{ }`;
+  - using **set-builder notation** (aka **set comprehension**) `{ x: P(x) }`, which means set of all `x` belonging to some set `X` such that predicate `P(x)` is `true`;
 
-There are 2 approaches to describe sets:
-- by **listing all elements** surrounded with curly brackets `{ }`;
-- using **set-builder notation** (aka **set comprehension**) `{x: P(x)}`, which means set of all `x` belonging to some set `X` such that predicate `P(x)` is `true`;
-  
 <br>
 
 **Empty set** (aka **null set**) is the set with **no** elements. It is expressed as `{}` or `∅`.<br>
@@ -23,7 +24,7 @@ Let `A` and `B` be sets:<br>
 
 <br>
 
-# Subset
+## Subset
 - `A ⊆ B` means `A` is a **subset** of `B` or `A` is **contained in** `B`, in other words **every** element of `A` is **also** an element of `B`;
   - **formal defenition**: `A ⊆ B, if ∀ a∈A ⇒ b∈B`;
   - also `B` is called a **superset** of set `A` and denoted `B ⊇ A`;
@@ -45,7 +46,7 @@ Example, consider set `A = {1,3,5}`, then
 
 <br>
 
-## Properties
+### Properties
 - Each set **contains itself**, i.e. `A ⊆ A`.
 - **Null set** `∅` is a **subset** of any set.
 - If set `B` is a **subset** of set `A`, then `B ∩ A = B`.
@@ -53,12 +54,21 @@ Example, consider set `A = {1,3,5}`, then
 
 <br>
 
-## Trivial subsets
+### Trivial subsets
 **Trivial subsets** of set `A` are **empty set** `{}` and **set itself** `A`.<br>
 
 <br>
 
-# Disjoint sets
+## Disjoint sets
 Two sets are said to be **disjoint sets** if they **have no element in common**.<br>
 Equivalently, **two disjoint sets are sets whose intersection is the empty set**. Two sets `A` and `B` are called **disjoint** if `A ∩ B = ∅`.<br>
 For example, `{1, 2, 3}` and `{4, 5, 6}` are **disjoint sets**, while `{1, 2, 3}` and `{3, 4, 5}` are **not disjoint**.<br>
+
+<br>
+
+# Multisets
+A **multiset**, *informally*, is a **collection** of elements that is **unordered** and may have **duplicate** elements.<br>
+The **number of occurrences** of a specific element is called its **multiplicity**.<br>
+**Notation**: same as for sets.<br>
+**Example**: `{3,5,5,7}`.<br>
+**Unorderedness**: `{3,5,5,7}` is the same as `{3,5,7,5}`.<br>
