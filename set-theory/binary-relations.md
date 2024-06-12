@@ -166,9 +166,9 @@ There are 2 type of order:
 The **converse of a binary relation** is the relation that occurs when the **order** of the elements is **switched** in the relation.<br>
 For example, the **converse** of the relation **child of** is the relation **parent of**.<br>
 
-if $X$ and $Y$ are sets and ${R\subseteq X\times Y}$ is a relation from $X$ to $Y$ then $`{R^{\operatorname {T} }}`$ is the relation defined so that $`y{R^{\operatorname {T} }}x`$ **iif** $xRy$.<br>
+if $X$ and $Y$ are sets and ${R\subseteq X\times Y}$ is a relation from $X$ to $Y$ then $`{R^T}`$ is the relation defined so that $`y{R^T}x`$ **iif** $xRy$.<br>
 
-In *set-builder notation*: $`{R^{\operatorname {T} }=\{(y,x)\in Y\times X:(x,y)\in R\}}`$
+In *set-builder notation*: $`{R^T=\{(y,x)\in Y\times X:(x,y)\in R\}}`$
 
 <br>
 
@@ -182,7 +182,7 @@ ${R \circ S=\{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such that 
 
 ## Properties:
 1. **Composition of relations** is **associative**: $R \circ (S \circ W) = (R \circ S) \circ W$.
-2. The **converse relation** of $R \circ S$ is $`(R \circ S)^{\operatorname {T}} = S^{\textsf {T}}\, \circ R^{\textsf {T}}`$.<br>
+2. The **converse relation** of $R \circ S$ is $`(R \circ S)^T = S^{\textsf T}\, \circ R^{\textsf T}`$.<br>
 
 <br>
 
