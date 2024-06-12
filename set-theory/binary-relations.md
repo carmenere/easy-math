@@ -1,17 +1,62 @@
-# Binary relation
-A **binary relation** `R` over sets `X` and `Y` is a **new set** of **ordered pairs** `(x, y)` consisting of elements `x` from `X` and `y` from `Y`.<br>
-So, **binary relation** associates elements of one set with elements of another set.<br>
+# Table of contents
+- [Table of contents](#table-of-contents)
+- [Cartesian product](#cartesian-product)
+- [N-ary relations](#n-ary-relations)
+- [Binary relations](#binary-relations)
+  - [Homogeneous relations](#homogeneous-relations)
+    - [Properties of homogeneous relations](#properties-of-homogeneous-relations)
+- [Equivalence relations](#equivalence-relations)
+  - [Partial equivalence relation](#partial-equivalence-relation)
+  - [Equivalence relation](#equivalence-relation)
+- [Order relations](#order-relations)
+  - [Weak partial order or just Partial order (≤)](#weak-partial-order-or-just-partial-order-)
+  - [Strict partial order (\<)](#strict-partial-order-)
+  - [Weak total order or just Total order (≤)](#weak-total-order-or-just-total-order-)
+  - [Strict total order (\<)](#strict-total-order-)
+- [Converse relation](#converse-relation)
+- [Composition relations](#composition-relations)
+  - [Properties:](#properties)
+  - [Examples](#examples)
+    - [Example1](#example1)
+    - [Example2](#example2)
 
 <br>
 
-A **binary relation** `R` over sets `X` and `Y` is a subset of **cartesian product** `X×Y`:
-- the set `X` is called the **domain** or **set of departure** of `R`;
-- the set `Y` the **codomain** or **set of destination** of `R`;
+# Cartesian product
+Given sets $X$ and $Y$, the **Cartesian product** ${X\times Y}$ is a **new set** ${\{(x,y)\mid x\in X{\text{ and }}y\in Y\},}$ and its elements $(x,y)$ are called **ordered pairs**.<br>
 
 <br>
 
-In a binary relation, the **order of the elements** is **important**: IF `x≠y` then `yRx` can be `true` or `false` **independently** of `xRy`.<br>
-For example, `3 divides 9` => `true`, but `9 divides 3` => `false`.<br>
+# N-ary relations
+An **n-ary relation** on $n$ sets, is **any subset** of **Cartesian product** of the $n$ sets.<br>
+
+More formal: **n-ary relation** $R$ over sets (in *some order*) ${X_{1},\dots ,X_{n}}$ is **any subset** of **Cartesian product** (in the *same order*): $R \subseteq{X_{1}\times \cdots \times X_{n}}$.<br>
+
+**Alternativly**: **n-ary relation** $R$ over sets (in *some order*) ${X_{1},\dots ,X_{n}}$ is an element of the **powerset** of ${X_{1}\times \cdots \times X_{n}}$ ($2^{X_{1}\times \cdots \times X_{n}}$).<br>
+
+<br>
+
+A *relation* is called a **homogeneous relation** when **all** sets are **equal to each other**: $X_i=Y_j \;\; ∀i \in [1,n],\; ∀j \in [1,n]$.<br>
+A *relation* is called a **heterogeneous relation** when **all** sets are **distinct**: $X_i\neq Y_j \;\; ∀i\neq j, \; i\in [1,n],\; j \in [1,n]$.<br>
+
+<br>
+
+# Binary relations
+A **binary relation** is the **2-ary relation** ($n=2$).<br>
+
+<br>
+
+A **binary relation** $R$ **from** the set $X$ **to** the set $Y$ (aka **binary relation** $R$ **over** sets $X$ and $Y$) is **any subset** of **Cartesian product**: $R \subseteq {X \times Y}$.<br>
+
+Alternativly: a **binary relation** $R$ **from** the set $X$ **to** the set $Y$ is **any element** of the **power set** of $X\times Y$: $R \in 2^{X\times Y}$.<br>
+
+In other words, **binary relation** associates elements of one set with elements of another set:
+- the set $X$ is called the **domain** or **set of departure** of $R$;
+- the set $Y$ the **codomain** or **set of destination** of $R$;
+
+<br>
+
+In a binary relation, the **order of the elements** is **important**: if $x \neq y$ then $yRx$ can be `true` or `false` **independently** of $xRy$. For example, `3 divides 9` $\Rightarrow$ `true`, but `9 divides 3` $\Rightarrow$ `false`.<br>
 
 <br>
 
@@ -19,15 +64,25 @@ Examples of relations:
 - **is greater than**;
 - **is equal to**;
 - **divides**;
+- **was born before**;
+- there is a **direct flight** from airport $x$ to airport $y$;
 
 <br>
 
-# Homogeneous relation
-A **homogeneous relation** over a set `X` is a *binary relation* over `X` and itself (`X`), i.e. it is a subset of the `X×X`. It is also simply called a (**binary**) **relation over** `X`.
+A *binary relation* is also called a **heterogeneous binary relation** when $X\neq Y$, i.e. if $X$ and $Y$ are **distinct sets**.<br>
+A *binary relation* is called a **homogeneous binary relation** when $X=Y$: $R \subseteq {X \times X}$.<br>
 
 <br>
 
-## Properties of homogeneous relations
+## Homogeneous relations
+Given a set $X$, a **homogeneous binary relation** is a **binary relation** $R$ on a set $X$ such that $R ⊆ \{ (x,y)\;| \;\; x,y ∈ X \}$.<br>
+The statement $(x,y) ∈ R$ is read "**x is R-related to y**" and is written in **infix** notation as $xRy$.<br>
+
+A **homogeneous relation** $R$ over a set $X$ may be represented as **directed simple graph permitting loops**, where $X$ is the **vertex set** and $R$ is the **edge set** (there is an *edge* $`e_{xy}`$ **from** a vertex $x$ **to** a vertex $y$ **iif** $xRy$).<br>
+
+<br>
+
+### Properties of homogeneous relations
 1. **Reflexivity**: for all `x ∈ X`: `xRx` returns `true`, i.e. every element is related to itself.
    - For example, `≥` is a **reflexive** relation but `>` is **not**.
 2. **Irreflexivity** (aka **Anti-reflexivity**): for all `x ∈ X`: `xRx` returns `false`,  i.e. no element is related to itself .
@@ -106,3 +161,47 @@ There are 2 type of order:
 2. **Irreflexivity**.
 3. **Transitivity**.
 4. **Weak connectivity**.
+
+<br>
+
+# Converse relation
+The **converse of a binary relation** is the relation that occurs when the **order** of the elements is **switched** in the relation.<br>
+For example, the **converse** of the relation **child of** is the relation **parent of**.<br>
+
+if $X$ and $Y$ are sets and ${R\subseteq X\times Y}$ is a relation from $X$ to $Y$ then $`{R^{\operatorname {T} }}`$ is the relation defined so that $`y{R^{\operatorname {T} }}x`$ **iif** $xRy$.<br>
+
+In *set-builder notation*: $`{R^{\operatorname {T} }=\{(y,x)\in Y\times X:(x,y)\in R\}}`$
+
+<br>
+
+# Composition relations
+Let $R$ is a **binary relation** from the set $X$ to the set $Y$, and $S$ is a binary relation from the set $Y$ to the set $Z$. The **composition of two binary relations** $R$ and $S$ is a **new binary relation** $R \circ S$ consisting of **ordered pairs** $(x,z)$ such that $(x,y) \in R$ and $(y,z) \in S$.<br>
+
+**More formal**: if ${R\subseteq X\times Y}$ and ${ S\subseteq Y\times Z}$ are two binary relations, then their composition $R \circ S$ is the relation
+${R \circ S=\{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such that }}(x,y)\in R{\text{ and }}(y,z)\in S\}}$.<br>
+
+<br>
+
+## Properties:
+1. **Composition of relations** is **associative**: $R \circ (S \circ W) = (R \circ S) \circ W$.
+2. The **converse relation** of $R \circ S$ is $`(R \circ S)^{\operatorname {T}} = S^{\textsf {T}}\, \circ R^{\textsf {T}}`$.<br>
+
+<br>
+
+## Examples
+### Example1
+Let $X = \{1,2,3\}$, $Y = \{1,2,3,4\}$ and $Z = \{0,1,2\}$.<br>
+Let $R = \{(1,1), (1,4), (2,3), (3,1), (3,4)\}$.<br>
+Let $S = \{(1,0), (2,0), (3,1), (3,2), (4,1)\}$.<br>
+Then, $R \circ S = \{(1,0), (1,1), (2,1), (2,2), (3,0), (3,1)\}$.<br>
+
+${R\subseteq X\times Y}$ and ${S\subseteq Y\times Z}$ are two binary relations, then their composition 
+
+<br>
+
+### Example2
+The relation **uncle of** (${xUz}$) is the **composition** of relations **is a brother of** (${xBy}$) and **is a parent of** (${yPz}$).<br>
+
+**More formal**: $U = B \circ P \quad {\text{ is equivalent to: }}\quad xByPz{\text{ if and only if }}xUz$.<br>
+
+<br>
