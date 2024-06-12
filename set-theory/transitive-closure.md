@@ -34,19 +34,17 @@ For any relation $R$, the **transitive closure** of $R$ **always exists**. To se
 Furthermore, there exists at least one transitive relation containing R, namely the trivial one: X × X.
 
 
-${R_{t}=\bigcup _{i=1}^{\infty }R^{i}.}$
-
-transitive closure of a relation 𝑅
- on a set 𝑆
- is the smallest relation 𝑇
- on S such that 𝑇
- is transitive and 𝑅⊂𝑇
-.
-
 For **finite sets**, we can **construct** the *transitive closure* **step by step**, starting from $R$ and adding **transitive edges**:
 1. Copy all elements from $R$ to $`R_t`$.
 2. For any triple $x,y,z \in X$ such that $(x,y) \in R$ and $(y,z) \in R$ **add** $(x,z)$ **to** $`R_t`$.
 3. **Repeat** *step 2* **until** $`R_t`$ **doesn't** satisfy **transitivity**.
+
+<br>
+
+Using composition of relation:
+$`{R_{t}=\bigcup _{i=1}^{\infty }R^{i}}`$
+
+
 
 <br>
 

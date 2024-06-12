@@ -19,6 +19,7 @@
   - [Examples](#examples)
     - [Example1](#example1)
     - [Example2](#example2)
+- [Power of relation](#power-of-relation)
 
 <br>
 
@@ -201,3 +202,8 @@ The relation **uncle of** (${xUz}$) is the **composition** of relations **is a b
 **More formal**: $U = B \circ P$ is **equivalent** to $xByPz{\text{ if and only if }}xUz$.<br>
 
 <br>
+
+# Power of relation
+${R^{i}}$ is the **i-th power** of $R$. The ${R^{i}}$ is defined inductively by 
+- ${R^{1}=R}$;
+- and for ${i>0}$, ${R^{i+1}=R\circ R^{i}}$;
