@@ -3,19 +3,19 @@
 - [Cartesian product](#cartesian-product)
 - [N-ary relations](#n-ary-relations)
 - [Binary relations](#binary-relations)
-  - [Homogeneous relations](#homogeneous-relations)
+- [Homogeneous binary relation](#homogeneous-binary-relation)
     - [Properties of homogeneous relations](#properties-of-homogeneous-relations)
-- [Equivalence relations](#equivalence-relations)
-  - [Partial equivalence relation](#partial-equivalence-relation)
-  - [Equivalence relation](#equivalence-relation)
-- [Order relations](#order-relations)
-  - [Weak partial order or just Partial order (≤)](#weak-partial-order-or-just-partial-order-)
-  - [Strict partial order (\<)](#strict-partial-order-)
-  - [Weak total order or just Total order (≤)](#weak-total-order-or-just-total-order-)
-  - [Strict total order (\<)](#strict-total-order-)
+  - [Equivalence relations](#equivalence-relations)
+    - [Partial equivalence relation](#partial-equivalence-relation)
+    - [Equivalence relation](#equivalence-relation)
+  - [Order relations](#order-relations)
+    - [Weak partial order or just Partial order (≤)](#weak-partial-order-or-just-partial-order-)
+    - [Strict partial order (\<)](#strict-partial-order-)
+    - [Weak total order or just Total order (≤)](#weak-total-order-or-just-total-order-)
+    - [Strict total order (\<)](#strict-total-order-)
 - [Converse relation](#converse-relation)
 - [Composition relations](#composition-relations)
-  - [Properties:](#properties)
+  - [Properties](#properties)
   - [Examples](#examples)
     - [Example1](#example1)
     - [Example2](#example2)
@@ -72,7 +72,7 @@ A *binary relation* is called a **homogeneous binary relation** when $X=Y$: $R \
 
 <br>
 
-## Homogeneous relations
+# Homogeneous binary relation
 Given a set $X$, a **homogeneous binary relation** is a **binary relation** $R$ on a set $X$ such that $R ⊆ \{ (x,y)\ | \ \  x,y ∈ X \}$.<br>
 The statement $(x,y) ∈ R$ is read "**x is R-related to y**" and is written in **infix** notation as $xRy$.<br>
 
@@ -102,8 +102,8 @@ A **homogeneous relation** $R$ over a set $X$ may be represented as **directed s
 
 <br>
 
-# Equivalence relations
-## Partial equivalence relation
+## Equivalence relations
+### Partial equivalence relation
 **Partial equivalence relation** (**PER**) is a binary relation that satisfies the following properties:
 1. **Symmetry**: IF `a=b` THEN `b=a`.
 2. **Transitivity**: IF `a=b` AND `b=c`, THEN `a=c`.
@@ -113,7 +113,7 @@ A **homogeneous relation** $R$ over a set $X$ may be represented as **directed s
 
 <br>
 
-## Equivalence relation
+### Equivalence relation
 **Equivalence relation** is a binary relation that satisfies the following properties:
 1. **Reflexivity**: Any number a is equal to itself.
 2. **Symmetry**: IF `a=b` THEN `b=a`.
@@ -121,14 +121,14 @@ A **homogeneous relation** $R$ over a set $X$ may be represented as **directed s
 
 <br>
 
-# Order relations
+## Order relations
 There are 2 type of order:
 1. **Partial order**. The word **partial** is used to indicate that **not every pair** of elements are **comparable**; that is, there may be pairs for which neither element precedes the other.
 2. **Total order**. In **total order** every pair is **comparable**.
 
 <br>
 
-## Weak partial order or just Partial order (≤)
+### Weak partial order or just Partial order (≤)
 **Partial order** (aka **non-strict/weak partial order**) is a binary relation that satisfies the following properties:
 1. **Antisymmetry**.
 2. **Reflexivity**.
@@ -136,7 +136,7 @@ There are 2 type of order:
 
 <br>
 
-## Strict partial order (<)
+### Strict partial order (<)
 **Strict partial order** is a binary relation that satisfies the following properties:
 1. **Asymmetry**.
 2. **Irreflexivity**.
@@ -144,7 +144,7 @@ There are 2 type of order:
 
 <br>
 
-## Weak total order or just Total order (≤)
+### Weak total order or just Total order (≤)
 **Total order** (aka **non-strict/weak total order**) is the **weak partial order** with the added property of **strong connectivity**:
 1. **Antisymmetry**.
 2. **Reflexivity**.
@@ -153,7 +153,7 @@ There are 2 type of order:
 
 <br>
 
-## Strict total order (<)
+### Strict total order (<)
 **Strict total order** is the **strict partial order** with the added property of **weak connectivity**:
 1. **Asymmetry**.
 2. **Irreflexivity**.
@@ -180,7 +180,7 @@ $`R \circ S = \{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such tha
 
 <br>
 
-## Properties:
+## Properties
 1. **Composition of relations** is **associative**: $R \circ (S \circ W) = (R \circ S) \circ W$.
 2. The **converse relation** of $R \circ S$ is $`(R \circ S)^T = S^{\textsf T}\, \circ R^{\textsf T}`$.<br>
 
