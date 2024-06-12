@@ -176,7 +176,7 @@ In *set-builder notation*: $`{R^T=\{(y,x)\in Y\times X:(x,y)\in R\}}`$
 Let $R$ is a **binary relation** from the set $X$ to the set $Y$, and $S$ is a binary relation from the set $Y$ to the set $Z$. The **composition of two binary relations** $R$ and $S$ is a **new binary relation** $R \circ S$ consisting of **ordered pairs** $(x,z)$ such that $(x,y) \in R$ and $(y,z) \in S$.<br>
 
 **More formal**: if ${R\subseteq X\times Y}$ and ${ S\subseteq Y\times Z}$ are two binary relations, then their composition is the new relation $R \circ S$:<br>
-$R \circ S = \{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such that }}(x,y)\in R{\text{ and }}(y,z)\in S\}$.<br>
+$`R \circ S = \{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such that }}(x,y)\in R{\text{ and }}(y,z)\in S\}`$.<br>
 
 <br>
 
