@@ -24,7 +24,7 @@
 <br>
 
 # Cartesian product
-Given sets $X$ and $Y$, the **Cartesian product** ${X\times Y}$ is a **new set** ${\{(x,y)\mid x\in X{\text{ and }}y\in Y\},}$ and its elements $(x,y)$ are called **ordered pairs**.<br>
+Given sets $X$ and $Y$, the **Cartesian product** ${X\times Y}$ is a **new set** $`\{(x,y)\mid x\in X{\text{ and }}y\in Y\}`$ and its elements $(x,y)$ are called **ordered pairs**.<br>
 
 <br>
 
