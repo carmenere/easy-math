@@ -175,8 +175,8 @@ In *set-builder notation*: $`{R^T=\{(y,x)\in Y\times X:(x,y)\in R\}}`$
 # Composition relations
 Let $R$ is a **binary relation** from the set $X$ to the set $Y$, and $S$ is a binary relation from the set $Y$ to the set $Z$. The **composition of two binary relations** $R$ and $S$ is a **new binary relation** $R \circ S$ consisting of **ordered pairs** $(x,z)$ such that $(x,y) \in R$ and $(y,z) \in S$.<br>
 
-**More formal**: if ${R\subseteq X\times Y}$ and ${ S\subseteq Y\times Z}$ are two binary relations, then their composition $R \circ S$ is the relation
-${R \circ S=\{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such that }}(x,y)\in R{\text{ and }}(y,z)\in S\}}$.<br>
+**More formal**: if ${R\subseteq X\times Y}$ and ${ S\subseteq Y\times Z}$ are two binary relations, then their composition is the new relation $R \circ S$:<br>
+$R \circ S = \{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such that }}(x,y)\in R{\text{ and }}(y,z)\in S\}$.<br>
 
 <br>
 
@@ -193,13 +193,11 @@ Let $R = \{(1,1), (1,4), (2,3), (3,1), (3,4)\}$.<br>
 Let $S = \{(1,0), (2,0), (3,1), (3,2), (4,1)\}$.<br>
 Then, $R \circ S = \{(1,0), (1,1), (2,1), (2,2), (3,0), (3,1)\}$.<br>
 
-${R\subseteq X\times Y}$ and ${S\subseteq Y\times Z}$ are two binary relations, then their composition 
-
 <br>
 
 ### Example2
 The relation **uncle of** (${xUz}$) is the **composition** of relations **is a brother of** (${xBy}$) and **is a parent of** (${yPz}$).<br>
 
-**More formal**: $U = B \circ P \quad {\text{ is equivalent to: }}\quad xByPz{\text{ if and only if }}xUz$.<br>
+**More formal**: $U = B \circ P$ is **equivalent** to $xByPz{\text{ if and only if }}xUz$.<br>
 
 <br>
