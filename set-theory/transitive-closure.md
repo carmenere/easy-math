@@ -1,8 +1,9 @@
 # Table of contents
 - [Table of contents](#table-of-contents)
 - [Transitive closure](#transitive-closure)
-  - [Properties of transitive relation (not closure)](#properties-of-transitive-relation-not-closure)
-  - [Pseudocode](#pseudocode)
+  - [Existence and description](#existence-and-description)
+  - [Constructing the transitive closure](#constructing-the-transitive-closure)
+    - [Pseudocode](#pseudocode)
   - [Examples](#examples)
     - [Example1](#example1)
   - [In graph theory](#in-graph-theory)
@@ -24,17 +25,26 @@ If $R$ itself is **transitive** then $`R_t = R`$.<br>
 
 <br>
 
-For **any relation** $R$, the **transitive closure** of $R$ **always exists**.
+
 
 <br>
 
-## Properties of transitive relation (not closure)
-1. There exists **at least one transitive relation** containing $R$, the trivial one: $X × X$.
-2. The **intersection** of two **transitive relations** is **transitive**.
-3. The **union** of two **transitive relations** need **not** be transitive.
+## Existence and description
+1. The **intersection** of two **transitive relations** (not closures) is **transitive**.
+2. The **union** of two **transitive relations** (not closures) need **not** be transitive.
 
 <br>
 
+For **any relation** $R$, the **transitive closure** of $R$ **always exists**. There exists **at least one transitive relation** containing $R$, the trivial one: $X × X$. The **transitive closure** of $R$ is then given by the **intersection** of **all transitive relations** (not closures) containing $R$.<br>
+
+<br>
+
+For any set $X$, we can prove that **transitive closure** is given by the following expression:<br>
+$`{\displaystyle R_{t}=\bigcup _{i=1}^{\infty }R^{i}}`$
+
+<br>
+
+## Constructing the transitive closure
 For **finite sets**, we can **construct** the *transitive closure* **step by step**, starting from $R$ and adding **transitive edges**:
 1. Copy all elements from $R$ to $`R_t`$.
 2. For any triple $x,y,z \in X$ such that $(x,y) \in R$ and $(y,z) \in R$ **add** $(x,z)$ **to** $`R_t`$.
@@ -42,12 +52,7 @@ For **finite sets**, we can **construct** the *transitive closure* **step by ste
 
 <br>
 
-Using composition of relation:
-$`{\displaystyle R^{t}=\bigcup _{i=1}^{\infty }R^{i}}`$
-
-<br>
-
-## Pseudocode
+### Pseudocode
 ```rust
 v1, v2, ..., vn = an arbitrary numbering of the vertices     
 G0 = G; // Initialize 
