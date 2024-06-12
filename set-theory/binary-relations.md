@@ -36,8 +36,8 @@ More formal: **n-ary relation** $R$ over sets (in *some order*) ${X_{1},\dots ,X
 
 <br>
 
-A *relation* is called a **homogeneous relation** when **all** sets are **equal to each other**: $X_i=Y_j \;\; ∀i \in [1,n],\; ∀j \in [1,n]$.<br>
-A *relation* is called a **heterogeneous relation** when **all** sets are **distinct**: $X_i\neq Y_j \;\; ∀i\neq j, \; i\in [1,n],\; j \in [1,n]$.<br>
+A *relation* is called a **homogeneous relation** when **all** sets are **equal to each other**: $X_i=Y_j \ \ ∀i \in [1,n],\  ∀j \in [1,n]$.<br>
+A *relation* is called a **heterogeneous relation** when **all** sets are **distinct**: $X_i\neq Y_j \ \ ∀i\neq j, \  i\in [1,n],\  j \in [1,n]$.<br>
 
 <br>
 
@@ -73,7 +73,7 @@ A *binary relation* is called a **homogeneous binary relation** when $X=Y$: $R \
 <br>
 
 ## Homogeneous relations
-Given a set $X$, a **homogeneous binary relation** is a **binary relation** $R$ on a set $X$ such that $R ⊆ \{ (x,y)\;| \;\; x,y ∈ X \}$.<br>
+Given a set $X$, a **homogeneous binary relation** is a **binary relation** $R$ on a set $X$ such that $R ⊆ \{ (x,y)\ | \ \  x,y ∈ X \}$.<br>
 The statement $(x,y) ∈ R$ is read "**x is R-related to y**" and is written in **infix** notation as $xRy$.<br>
 
 A **homogeneous relation** $R$ over a set $X$ may be represented as **directed simple graph permitting loops**, where $X$ is the **vertex set** and $R$ is the **edge set** (there is an *edge* $`e_{xy}`$ **from** a vertex $x$ **to** a vertex $y$ **iif** $xRy$).<br>
