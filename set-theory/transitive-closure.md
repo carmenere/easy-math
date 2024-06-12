@@ -1,7 +1,7 @@
 # Table of contents
 - [Table of contents](#table-of-contents)
 - [Transitive closure](#transitive-closure)
-  - [Properties](#properties)
+  - [Properties of transitive relation (not closure)](#properties-of-transitive-relation-not-closure)
   - [Pseudocode](#pseudocode)
   - [Examples](#examples)
     - [Example1](#example1)
@@ -24,15 +24,16 @@ If $R$ itself is **transitive** then $`R_t = R`$.<br>
 
 <br>
 
-## Properties
-1. The **intersection** of two transitive relations is **transitive**.
-2. The **union** of two transitive relations need **not** be transitive.
+For **any relation** $R$, the **transitive closure** of $R$ **always exists**.
 
+<br>
 
+## Properties of transitive relation (not closure)
+1. There exists **at least one transitive relation** containing $R$, the trivial one: $X × X$.
+2. The **intersection** of two **transitive relations** is **transitive**.
+3. The **union** of two **transitive relations** need **not** be transitive.
 
-For any relation $R$, the **transitive closure** of $R$ **always exists**. To see this, note that the intersection of any family of transitive relations is again transitive.
-Furthermore, there exists at least one transitive relation containing R, namely the trivial one: X × X.
-
+<br>
 
 For **finite sets**, we can **construct** the *transitive closure* **step by step**, starting from $R$ and adding **transitive edges**:
 1. Copy all elements from $R$ to $`R_t`$.
@@ -42,9 +43,7 @@ For **finite sets**, we can **construct** the *transitive closure* **step by ste
 <br>
 
 Using composition of relation:
-$`{R_{t}=\bigcup _{i=1}^{\infty }R^{i}}`$
-
-
+$`{\displaystyle R^{t}=\bigcup _{i=1}^{\infty }R^{i}}`$
 
 <br>
 
