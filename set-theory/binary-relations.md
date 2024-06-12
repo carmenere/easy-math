@@ -73,7 +73,7 @@ A *binary relation* is called a **homogeneous binary relation** when $X=Y$: $R \
 <br>
 
 # Homogeneous binary relation
-Given a set $X$, a **homogeneous binary relation** is a **binary relation** $R$ on a set $X$ such that $R ⊆ \{ (x,y)\ | \ \  x,y ∈ X \}$.<br>
+Given a set $X$, a **homogeneous binary relation** is a **binary relation** $R$ on a set $X$ such that $`R ⊆ \{ (x,y)\ | \ \  x,y ∈ X \}`$.<br>
 The statement $(x,y) ∈ R$ is read "**x is R-related to y**" and is written in **infix** notation as $xRy$.<br>
 
 A **homogeneous relation** $R$ over a set $X$ may be represented as **directed simple graph permitting loops**, where $X$ is the **vertex set** and $R$ is the **edge set** (there is an *edge* $`e_{xy}`$ **from** a vertex $x$ **to** a vertex $y$ **iif** $xRy$).<br>
@@ -168,7 +168,7 @@ For example, the **converse** of the relation **child of** is the relation **par
 
 if $X$ and $Y$ are sets and ${R\subseteq X\times Y}$ is a relation from $X$ to $Y$ then $`{R^T}`$ is the relation defined so that $`y{R^T}x`$ **iif** $xRy$.<br>
 
-In *set-builder notation*: $`{R^T=\{(y,x)\in Y\times X:(x,y)\in R\}}`$
+In *set-builder notation*: $`{R^T = \{(y,x)\in Y\times X:(x,y)\in R\}}`$
 
 <br>
 
@@ -188,10 +188,10 @@ $`R \circ S = \{(x,z)\in X\times Z:{\text{ there exists }}y\in Y{\text{ such tha
 
 ## Examples
 ### Example1
-Let $X = \{1,2,3\}$, $Y = \{1,2,3,4\}$ and $Z = \{0,1,2\}$.<br>
-Let $R = \{(1,1), (1,4), (2,3), (3,1), (3,4)\}$.<br>
-Let $S = \{(1,0), (2,0), (3,1), (3,2), (4,1)\}$.<br>
-Then, $R \circ S = \{(1,0), (1,1), (2,1), (2,2), (3,0), (3,1)\}$.<br>
+Let $`X = \{1,2,3\}`$, $`Y = \{1,2,3,4\}`$ and $`Z = \{0,1,2\}`$.<br>
+Let $`R = \{(1,1), (1,4), (2,3), (3,1), (3,4)\}`$.<br>
+Let $`S = \{(1,0), (2,0), (3,1), (3,2), (4,1)\}`$.<br>
+Then, $`R \circ S = \{(1,0), (1,1), (2,1), (2,2), (3,0), (3,1)\}`$.<br>
 
 <br>
 
