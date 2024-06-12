@@ -44,8 +44,6 @@ A *relation* is called a **heterogeneous relation** when **all** sets are **dist
 # Binary relations
 A **binary relation** is the **2-ary relation** ($n=2$).<br>
 
-<br>
-
 A **binary relation** $R$ **from** the set $X$ **to** the set $Y$ (aka **binary relation** $R$ **over** sets $X$ and $Y$) is **any subset** of **Cartesian product**: $R \subseteq {X \times Y}$.<br>
 
 Alternativly: a **binary relation** $R$ **from** the set $X$ **to** the set $Y$ is **any element** of the **power set** of $X\times Y$: $R \in 2^{X\times Y}$.<br>
