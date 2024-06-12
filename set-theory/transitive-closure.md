@@ -26,9 +26,6 @@ If $R$ itself is **transitive** then $`R_t = R`$.<br>
 <br>
 
 
-
-<br>
-
 ## Existence and description
 1. The **intersection** of two **transitive relations** (not closures) is **transitive**.
 2. The **union** of two **transitive relations** (not closures) need **not** be transitive.
