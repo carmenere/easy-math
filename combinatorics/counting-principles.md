@@ -36,7 +36,7 @@
 The **Cartesian product** is the basis for the **MP**.<br>
 To choose one element of $`A = \{a,b,c\}`$ **and** after such choose to choose one element of $`B = \{1,2\}`$ is the **same as** to choose one of $`R = \{(a,1), (a,2), (b,1), (b,2), (c,1), (c,2)\}`$. The sets $A$ and $B$ in this example are **disjoint** sets, but that is not necessary.<br>
 
-The number of ways to choose **ordered pair with repetitions** from $`{a,b,c}`$ is the same as number of ways to choose element from $`\{a,b,c\} \times \{a,b,c\} = \{(a,a), (a,b), (a,c), (b,a), (b,b),(b,c),(c,a),(c,b),(c,c)\}`$.
+The number of ways to choose **ordered pair with repetitions** from $`\{a,b,c\}`$ is the same as number of ways to choose element from $`\{a,b,c\} \times \{a,b,c\} = \{(a,a), (a,b), (a,c), (b,a), (b,b),(b,c),(c,a),(c,b),(c,c)\}`$.
 
 <br>
 
@@ -88,16 +88,15 @@ So, the **number of all solutions** = $`|S_0| + |S_1| + |S_2| + |S_3| + |S_4| + 
 <br>
 
 ## Example 4
-Consider sequence of cities: $A -> B -> C -> D$ and consider that there are **2 ways** from $A$ to $B$, **3 ways** from $B$ to $C$ and **4 ways** from $C$ to $D$.<br>
-Let denote $S->D$ set of all ways between **adjacent cities** $S$ and $D$.<br>
-Obvious that all such sets in path $A -> B -> C -> D$ ($A -> B$, $B -> C$, $C -> D$) are **pairwise disjoint**.<br>
-So, there are $2 * 3 * 4 = 24$ ways to choose **one** way $(a,b,c,d) where a∈A, b∈B, c∈C, d∈D$ from $A$ to $D$ or **equaly** the **total number** of ways from $A$ to $D$ is $2 * 3 * 4 = 24$.<br>
+Consider sequence of cities: $A \rightarrow B \rightarrow C \rightarrow D$ and consider that there are **2 ways** from $A$ to $B$, **3 ways** from $B$ to $C$ and **4 ways** from $C$ to $D$.<br>
+Let denote $S\rightarrowD$ set of all ways between **adjacent cities** $S$ and $D$.<br>
+Obvious that all such sets in path $A \rightarrow B \rightarrow C \rightarrow D$ ($A \rightarrow B$, $B \rightarrow C$, $C \rightarrow D$) are **pairwise disjoint**.<br>
+So, there are $2 * 3 * 4 = 24$ ways to choose **one** way $(a,b,c,d) \  \text{where} \  a∈A, b∈B, c∈C, d∈D$ from $A$ to $D$ or **equaly** the **total number** of ways from $A$ to $D$ is $2 * 3 * 4 = 24$.<br>
 
 <br>
 
 ## Example 5
-Let $X = {1,2, ..., 100}$ and let $S = \{(a,b,c) | a,b,c ∈ X, a<b and a<c\}$.<br>
-**Find** $|S|$.<br>
+Let $`X = \{1,2, ..., 100\}`$ and let $`S = \{(a,b,c) | a,b,c ∈ X, a<b and a<c\}`$. **Find** $|S|$.<br>
 
 We can divide it into **99 disjoint cases**: $a=1, a=2, ..., a=99$.<br>
 For every such case there are $(100 - a)$ choices for $b$ and $c$.
