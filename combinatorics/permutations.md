@@ -1,15 +1,11 @@
 # k-tuples
 A **tuple** is an **ordered collection** of elements taken from a set and may have **duplicate** elements.<br>
-A **tuple** of size `k` (**tuple** of `k` elements) is called an `k-tuple`.<br>
-**Notation**: **parentheses** `( )` or **angle brackets** `⟨ ⟩`.<br>
-**Example**: `(2,7,4,1,7)` denotes a **5-tuple**.<br>
-**Orderedness**: `(1,2,3)` is **different** from `(3,2,1)`, i.e. `(1, 2, 3) ≠ (3, 2, 1)` .<br>
+A **tuple** of size $k$ (**tuple** of $k$ elements) is called an $k-tuple$.<br>
+**Notation**: **parentheses** $( )$ or **angle brackets** $⟨ ⟩$.<br>
+**Example**: $(2,7,4,1,7)$ denotes a **5-tuple**.<br>
+**Orderedness**: $(1,2,3)$ is **different** from $(3,2,1)$, i.e. $(1, 2, 3) ≠ (3, 2, 1)$ .<br>
 
-<br>
-
-The general rule for the identity of two **k-tuples** is `(a1, a2, …, an) = (b1, b2, …, bn)` if and only if `a1 = b1`, `a2 = b2`, ..., `an = bn`.
-
-The number of **k-tuples** that can be selected from set `{1, 2, . . . , n}` **without** repeating elements and is `P(n,k)`.
+The **general rule** for the identity of two **k-tuples** is $(a_1, a_2, …, a_n) = (b_1, b_2, …, b_n)$ **if and only if** $a_1 = b_1$, $a_2 = b_2$, ..., $a_n = b_n$.<br>
 
 <br>
 
@@ -19,153 +15,157 @@ A **permutation** is an **arrangement** of items in a **particular order**, i.e.
 <br>
 
 ## Permutations without repetitions
-Consider a set `A = {1,2,3, ..., n}`.<br>
-A **k-permutation of n** *without repetitions* (aka **partial permutations**, **k-arrangements of n**) is **all ordered tuples** of length `k, k <= n` that consist of **distinct** elements from `A, |A| = n`.<br>
-The **number** of all such **k-permutation of n** is denoted as `P(n,k)`.<br>
+Consider a set $A = \{1,2,3, ..., n\}$.<br>
+A **$k$-permutation of $n$** *without repetitions* (aka **partial permutations**, **k-arrangements of n**) is **all ordered tuples** of length $k, \text{where} \  k \le n$ that consist of **distinct** elements from some set $A, |A| = n$. In other words it is the number of **k-tuples** that can be selected from set $A = \{1, 2, . . . , n\}$ **without** repeating elements.<br>
+The **number** of all such **$k$-permutation of $n$** is denoted as $P(n,k)$ or ${\displaystyle P^{n}_{k}}$.<br>
 
-When `k = n`, **k-permutation of n** is simply called **permutation of n**.<br>
-The **number** of all such **permutations of n** is denoted as `P(n)`.<br>
-
-<br>
-
-## Formulas
-- `P(n,k) = n!/(n-k)!`;
-- `P(n) = n!`;
+When $k = n$, **$k$-permutation of $n$** is simply called **permutation of n**.<br>
+The **number** of all such **permutations of n** is denoted as $P(n)$ or $P_n$.<br>
 
 <br>
 
-## Proofs
-Main idea: when we form **k-permutation of n** *without repetitions* we select element from set **without** returning it back.<br>
-So, after each such selection we get **new set** with **decremented** *cardinality*.<br>
+**Formulas**:
+- ${\displaystyle P^{n}_{k} = \frac{n!}{(n-k)!}}$
+- ${\displaystyle P_n = n!}$
+
+<br>
+
+## Proof
+Main idea: when we form **$k$-permutation of $n$** *without repetitions* we select element from set **without** returning it back. So, after each such selection we get **new set** with **decremented** *cardinality*.<br>
 
 <br>
 
 ### Trivial case
-Consider finite set `A = {1,2,3}, |A| = 3`. Find number of all **3-tuples** `(a,b,c)` *without repetitions* from `A`.<br>
+Consider finite set $A = \{1,2,3\}, |A| = 3$. Find number of all **3-tuples** $(a,b,c)$ *without repetitions* from $A$.<br>
 Steps:<br>
-1. We have `|A|` **choices** to select element from `A`. Take element `1` from `A` **without returning** it back, then we get new set `B = A \ {1} = {2,3}` with cardinality `|A| - 1 = 2`.
-2. We have `|B|` **choices** to select element from `B`. Take element `2` from `B` **without returning** it back, then we get new set `C = B \ {2} = {1}` with cardinality `|B| - 1 = 1`.
-3. We have `|C|` **choices** to select element from `C`. Take element `1` from `C` **without returning** it back, then we get new **empty** set `D = C \ {1} = {}` with cardinality `|C| - 1 = 0`.
+1. We have $|A|$ **choices** to select element from $A$. Take element $1$ from $A$ **without returning** it back, then we get new set $B = A \setminus \{1\} = \{2,3\}$ with cardinality $|A| - 1 = 2$.
+2. We have $|B|$ **choices** to select element from $B$. Take element $2$ from $B$ **without returning** it back, then we get new set $C = B \setminus \{2\} = \{1\}$ with cardinality $|B| - 1 = 1$.
+3. We have $|C|$ **choices** to select element from $C$. Take element $1$ from $C$ **without returning** it back, then we get new **empty** set $D = C \setminus \{1\} = \{\}$ with cardinality $|C| - 1 = 0$.
 
-The **total number** by **MP** of all **3-tuples** `(a,b,c)` *without repetitions* from `A` is equal to the cardinality of cartesian product of sets `A`, `B`, `C`:
-- `A x B x C = |A| * |B| * |C| = 3 * 2 * 1 = 6`.<br>
+The **total number** by **MP** of all **3-tuples** $(a,b,c)$ *without repetitions* from $A$ is equal to the cardinality of cartesian product of sets $A$, $B$, $C$:
+- $A \times B \times C = |A| \times |B| \times |C| = 3 * 2 * 1 = 6$.<br>
 
 <br>
 
-After all steps we get **3** sets: `A = {1,2,3}`, `B = {1,2}`, `C = {1}`. We see that choice in next step is **independent** from all choices in previous steps. It implies **MP**.<br>
+After all steps we get **3** sets: $A = \{1,2,3\}$, $B = \{1,2\}$, $C = \{1\}$. We see that choice in next step is **independent** from all choices in previous steps. It implies **MP**.<br>
 
-Consider **3** another sets: `X = {x1,x2,x3}`, `Y = {y1,y2}`, `Z = {z1}`.<br>
+Consider **3** another sets: $X = \{x_1,x_2,x_3\}$, $Y = \{y_1,y_2\}$, $Z = \{z_1\}$.<br>
 
-**MP** gives **6** following *3-tuples* `(x,y,z)` *without repetitions* from `X x Y x Z`:
-- `(x1,y1,z1)`
-- `(x1,y2,z1)`
-- `(x2,y1,z1)`
-- `(x2,y2,z1)`
-- `(x3,y1,z1)`
-- `(x3,y2,z1)`
+**MP** gives **6** following *3-tuples* $(x,y,z)$ *without repetitions* from $X \times Y \times Z$:
+- $(x_1,y_1,z_1)$
+- $(x_1,y_2,z_1)$
+- $(x_2,y_1,z_1)$
+- $(x_2,y_2,z_1)$
+- $(x_3,y_1,z_1)$
+- $(x_3,y_2,z_1)$
 
-Consider we can assign to `xi`, `yi` and `zi` values from the set `A`.<br>
-Then, if we **require** that `xi ≠ yi`, `yi ≠ zi`, `xi ≠ zi` it will the **same as** we choose **3-tuples** *without repetitions* from `A`.<br>
+Consider we can assign to $x_i$, $y_i$ and $z_i$ values from the set $A$.<br>
+Then, if we **require** that $x_i ≠ y_i$, $y_i ≠ z_i$, $x_i ≠ z_i$ it will the **same as** we choose **3-tuples** *without repetitions* from $A$.<br>
 
 <br>
 
 ### More general case
-Consider finite set `A = {1,2, ..., n}, |A| = n`. Find number of all **3-tuples** `(a,b,c)` *without repetitions* from `A`.<br>
+Consider finite set $A = \{1,2, ..., n\}, |A| = n$. Find number of all **3-tuples** $(a,b,c)$ *without repetitions* from $A$.<br>
 Steps:<br>
-0. Consider `A1 = A`, so `|A1| = n`.
-1. We have `|A1|` **choices** to select element from `A1`. Take element from `A1` **without returning** it back, then we get new set `A2 = A1 \ {a}` with cardinality `|A1| - 1 = n-1`.
-2. We have `|A2|` **choices** to select element from `A2`. Take element from `A2` **without returning** it back, then we get new set `A3 = A2 \ {a}` with cardinality `|A2| - 1 = n-2`.
+0. Consider $A_1 = A$, so $|A_1| = n$.
+1. We have $|A_1|$ **choices** to select element from $A_1$. Take element from $A_1$ **without returning** it back, then we get new set $A_2 = A_1 \setminus \{a\}$ with cardinality $|A_1| - 1 = n-1$.
+2. We have $|A_2|$ **choices** to select element from $A_2$. Take element from $A_2$ **without returning** it back, then we get new set $A3 = A_2 \setminus \{a\}$ with cardinality $|A_2| - 1 = n-2$.
 3. And so on.
 
 <br>
 
 Then
-- `P(n,k) = A1 x A2 x ... x An = |A1| * |A2| * ... * |An| = n * (n-1) * ... * (n - k + 1)`
+- $P^{n}_{k} = A_1 \times A_2 \times ... \times A_n = |A_1| \times |A_2| \times ... \times |A_n| = n * (n-1) * ... * (n - k + 1)$
 
-We can **complement** `P(n,k) = n * (n-1) * ... * (n - k + 1)` to `n!` by **multiplying** it by `(n-k)!`, where `(n-k)! = (n-k) * (n-(k+1)) * (n-(k+2)) * 3 * 2 * 1`.<br>
+We can **complement** $P^{n}_{k} = n * (n-1) * ... * (n - k + 1)$ to $n!$ by **multiplying** it by $(n-k)!$, where $(n-k)! = (n-k) * (n-(k+1)) * (n-(k+2)) * 3 * 2 * 1$.<br>
+
 So,
-- `P(n,k) * (n-k)! = n!` **=>** `P(n,k) = n!/(n-k)!`.
+- $P^{n}_{k} * (n-k)! = n!$
+
+<br>
+
+**Finally**:
+- ${\displaystyle P^{n}_{k} = \frac{n!}{(n-k)!}}$.
 
 <br>
 
 ## Examples
-Consider `A = {a}`. Then, there is only **one** **1-permutaton** of `A`:
-- `(a)`;
+Consider $A = \{a\}$. Then, there is only **one 1-permutaton** of $A$:
+- $(a)$;
 
-Consider `A = {a,b}`. Then, there are only **two** **2-permutatons** of `A`:
-- `(a,b)`;
-- `(b,a)`;
+Consider $A = \{a,b\}$. Then, there are only **two 2-permutatons** of $A$:
+- $(a,b)$;
+- $(b,a)$;
 
-Consider `A = {a,b,c}`. Find **all** **3-permutatons** of `A`.
-Divide problem into 2 disjoint cases. There are only **two** **2-permutatons** of `{a,b}`. 
-Count all new permutations for each permutation of `{a,b}`:
-1. Adding `c` to ordered pair `(a,b)` gives us **three** new 3-tuples:
-   - `(c,a,b)`
-   - `(a,c,b)`
-   - `(a,b,c)`
-2. Adding `c` to ordered pair `(b,a)` gives us **three** new 3-tuples:
-   - `(c,b,a)`
-   - `(b,c,a)`
-   - `(b,a,c)`
+Consider $A = \{a,b,c\}$. Find **all 3-permutatons** of $A$.
+Divide problem into 2 disjoint cases. There are only **two 2-permutatons** of ${a,b}$. 
+Count all new permutations for each permutation of ${a,b}$:
+1. Adding $c$ to ordered pair $(a,b)$ gives us **three** new 3-tuples:
+   - $(c,a,b)$
+   - $(a,c,b)$
+   - $(a,b,c)$
+2. Adding $c$ to ordered pair $(b,a)$ gives us **three** new 3-tuples:
+   - $(c,b,a)$
+   - $(b,c,a)$
+   - $(b,a,c)$
 
-According **AP** we have `3 + 3 = 6` total **3-tuples** of `{a,b} + {c} = {a,b,c} = A`.
+According **AP** we have $3 + 3 = 6$ total **3-tuples** of $\{a,b\} + \{c\} = \{a,b,c\} = A$.
 
 <br>
 
 ## Permutations with repetitions
-A **k-permutation of n** *with repetitions* is **all ordered pairs** of length `k, k <= n` that consist of elements from `A, |A| = n`.<br>
-The **number** of such **k-permutation of n** is denoted as `P̄(n,k)`.<br>
+A **$k$-permutation of $n$** *with repetitions* is **all ordered pairs** of length $k, k \le n$ that consist of elements from $A, |A| = n$.<br>
+The **number** of such **$k$-permutation of $n$** is denoted as ${\displaystyle \overline{P}(n,k)}$ or ${\displaystyle \overline{P}^{n}_{k}}$.<br>
 
 <br>
 
-## Formulas
-- `P̄(n,k) = n^k`;
+**Formula**:
+- $`{\displaystyle \overline{P_{k}^{n}} = n^k}`$
 
 <br>
 
-## Proofs
-When we form **k-permutation of n** *with repetitions* we **return** back selected element to **original set**.<br>
-So, on every step we use the **original set** and its cardinality isn't changed.
+### Proof
+When we form **$k$-permutation of $n$** *with repetitions* we **return** back selected element to **original set**. So, on **every step** we use the **original set** and its cardinality isn't changed.<br>
 
 <br>
 
 ### Trivial case
-Example, consider finite set `A = {1,2,3}, |A| = 3`. Find number of all **3-tuples** `(a,b,c)` *with repetitions* from `A`. <br>
+Example, consider finite set $A = \{1,2,3\}, |A| = 3$. Find number of all **3-tuples** $(a,b,c)$ *with repetitions* from $A$. <br>
 Steps:<br>
-1. Take element from `A` then **return it back** to `A`. Here we have `|A|` **choices** to select element from `A`.
-2. Take element from `A` then **return it back** to `A`. Here we have `|A|` **choices** to select element from `A`.
-3. Take element from `A` then **return it back** to `A`. Here we have `|A|` **choices** to select element from `A`.
+1. Take element from $A$ then **return it back** to $A$. Here we have $|A|$ **choices** to select element from $A$.
+2. Take element from $A$ then **return it back** to $A$. Here we have $|A|$ **choices** to select element from $A$.
+3. Take element from $A$ then **return it back** to $A$. Here we have $|A|$ **choices** to select element from $A$.
 
 <br>
 
-Acording **MP** the **total number** of all **3-tuples** `(a,b,c)` is equal to the *cardinality* of cartesian product of sets `A`, `A`, `A`:
-- `A x A x A = |A| * |A| * |A| = 3^3 = 27`
+Acording **MP** the **total number** of all **3-tuples** $(a,b,c)$ is equal to the *cardinality* of cartesian product of sets $A$, $A$, $A$:
+- $A \times A \times A = |A| \times |A| \times |A| = 3^3 = 27$
 
 <br>
 
 ### More general case
-Consider finite set `A = {1,2, ..., n}, |A| = n`. Find all **k-tuples** *with repetitions* from `A`.<br>
+Consider finite set $A = {1,2, ..., n}, |A| = n$. Find all **k-tuples** *with repetitions* from $A$.<br>
 Then:
-- `P̄(n,k) = A x A x ... x A = |A| * |A| * ... * |A| = n^k`
+- $\overline{P}^{n}_{k} = A \times A \times ... \times A = |A| \times |A| \times ... \times |A| = n^k$
 
 <br>
 
 # Permutations of multisets
-If `M` is a finite **multiset**, then a **multiset permutation** is an **ordered arrangement** of elements of all `M`.<br>
-The **number of occurrences** of a specific element in `M` is called its **multiplicity**.
+A **permutations of multiset** $M$ is the number of **all ordered arrangements** of elements from **multiset** $M$. The **permutations of multiset** is also called **multinomial coefficient**.<br>
+The **number of occurrences** of a specific element in $M$ is called its **multiplicity**. The **sum** of all **multiplicities** of the elements of **multiset** $M$ is **always equal** to the **cardinality** of $M$.<br>
 
 <br>
 
-## Formulas
-If the **multiplicities** of the elements of `M` are `m1`, `m2`, ..., `mk` and their sum (that is, the size of M) is `n` then the number of **multiset permutations** of `M` is
-- `n!/(m1!*m2!*...*mk!)`
-
-It is called **multinomial coefficient**.<br>
+**Formula**:
+- ${\displaystyle P^{n}_{m_1,m_2,...,m_k} = \frac{n!}{m_1!*m_2!*...*m_k!}}$
+  - where:
+    - $m_1$, $m_2$, ..., $m_k$ are **multiplicities** of the elements of $M$
+    - $n$ is the cardinality of $M$
 
 <br>
 
 ## Number of ways to put objects into bins
-The number of ways to put objects into bins is given by the *multinomial coefficient*: `n!/(m1!*m2!*...*mk!)`, where
-- `k` is a **number of bins**;
-- `mi` is a **number of elements in bin** `i`;
-- `n` is is the **number of all items**;
+The number of ways to **put objects into bins** is equal to the *multinomial coefficient* $P^{n}_{m_1,m_2,...,m_k}$, where:
+- $k$ is a **number of all bins**;
+- $m_i$ is a **number of elements in bin** $i$;
+- $n$ is is the **number of all objects**;
