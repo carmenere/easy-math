@@ -14,7 +14,7 @@
 <br>
 
 - **Combinations** *with* repetitions:
-  - ${\displaystyle \overline{C^{n}_{k}} = C^{n+k-1}_{k}}$
+  - ${\displaystyle \overline{C^{n}_{k}} = C^{n+k-1}_{k} = \frac{(k+n-1)!}{(n-1)!*k!}}$
 
 <br>
 

@@ -9,22 +9,22 @@ A **$k$-combination of $n$** *without repetitions* is a **subset** of set $A$ wi
 The **number** of all such **$k$-combination of $n$** is denoted as $`{\displaystyle C(n,k)}`$ or $`{\displaystyle C^{n}_{k}}`$ or $`{\displaystyle \binom{n}{k}}`$.<br>
 
 **Formula**:
-- $`{\displaystyle C^{n}_{k} = \frac{P^{n}_{k}}{k!}}`$
+- $`{\displaystyle C^{n}_{k} = \frac{A^{n}_{k}}{k!} = \frac{n!}{k!*(n-k)!}}`$
 
 <br>
 
 **Proof**:<br>
 - Each **$k$-combination of $n$** *without repetitions* has $k!$ **permutations**:
-  - $`P^{n}_{k} = C^{n}_{k} \times k!`$
+  - $`A^{n}_{k} = C^{n}_{k} \times k!`$
 - So, it is obvious that:
-  - $`{\displaystyle C^{n}_{k} = \frac{P^{n}_{k}}{k!}}`$
+  - $`{\displaystyle C^{n}_{k} = \frac{A^{n}_{k}}{k!} = \frac{n!}{k!*(n-k)!}}`$
 
 <br>
 
 When $k = n$, **$k$-combination of $n$** is simply called **combination of $n$**.<br>
 The **number** of all such **combinations of $n$** is denoted as $C(n)$.<br>
 
-Since the *order doesn't matter* in combinations, it is obvious that $`C^{n}_{k} < P^{n}_{k}`$, i.e. the all *combinations* are **subset** of all *permutations*.<br>
+Since the *order doesn't matter* in combinations, it is obvious that $`C^{n}_{k} < A^{n}_{k}`$, i.e. the all *combinations* are **subset** of all *permutations*.<br>
 
 <br>
 
@@ -76,9 +76,11 @@ Then we can use $0$ as **separator** between positions in tuples and instead the
 
 <br>
 
-So, **every** such *k-multiset* has **appropriate binary code** of **length** $k+n-1$ in which **zero** is repeated $(n-1)$ times and **ones** is repeated $k$ times.<br>
+So, **every** such *k-multiset* has **appropriate binary code** of **length** $k+n-1$ in which **zero** is repeated $(n-1)$ times and **ones** is repeated $k$ times and the number of **all** such **$k$-multisubsets** is equal to the number of **all** such **binary codes**.<br>
 
-The number of **all** such **$k$-multisubsets** is equal to the number of **all** such **binary codes**. In turn, the number of **all** such **binary codes** is equal to number of  **permutations of multisets** of **length** $k+n-1$ in which **zero** is repeated $(n-1)$ times and **ones** is repeated $k$ times.<br>
+In turn, the number of **all** such **binary codes** is equal to number of  **permutations of multiset** of **length** $k+n-1$ in which **zero** is repeated $(n-1)$ times and **ones** is repeated $k$ times.<br>
 
-So,
-$$
+<br>
+
+**Finally**:
+- $`{\displaystyle \overline{C^{n}_{k}} = \frac{(k+n-1)!}{(n-1)!*k!} = C^{n+k-1}_{k}}`$
