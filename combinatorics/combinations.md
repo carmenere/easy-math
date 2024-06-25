@@ -71,8 +71,8 @@ Then we can use $0$ as **separator** between positions in tuples and instead the
 <br>
 
 **Examples**:
-- $`{\displaystyle (2,1,1,0) \implies \underbrace{11}_\text{of a} \underbrace{0}_\text{separator} \underbrace{1}_\text{of b} \underbrace{0}_\text{separator} \underbrace{1}_\text{of c} \underbrace{0}_\text{separator} \underbrace{}_\text{of d} \implies 1101010}`$;
-- $`{\displaystyle (1,2,0,1) \implies \underbrace{1}_\text{of a} \underbrace{0}_\text{separator} \underbrace{11}_\text{of b} \underbrace{0}_\text{separator} \underbrace{}_\text{of c} \underbrace{0}_\text{separator} \underbrace{1}_\text{of d} \implies 1011001}`$;
+- $`{\displaystyle (2,1,1,0) \implies \underbrace{11}_\text{a} \underbrace{0}_\text{separator} \underbrace{1}_\text{b} \underbrace{0}_\text{separator} \underbrace{1}_\text{c} \underbrace{0}_\text{separator} \underbrace{}_\text{d} \implies 1101010}`$;
+- $`{\displaystyle (1,2,0,1) \implies \underbrace{1}_\text{a} \underbrace{0}_\text{separator} \underbrace{11}_\text{b} \underbrace{0}_\text{separator} \underbrace{}_\text{c} \underbrace{0}_\text{separator} \underbrace{1}_\text{d} \implies 1011001}`$;
 
 <br>
 
