@@ -44,7 +44,7 @@ So, the number of **$k$-combination of $n$** for **all** $k∈[0;n]$ is the numb
 
 ## Combinations with repetitions
 A **$k$-combination of $n$** *with repetitions* is a **multiset** with *cardinality* $k$ (aka **$k$-multisubset**) that consists of elements from $A$.<br>
-The **number** of all such **$k$-multisubsets** is denoted as $`{\displaystyle \overline {C(n,k)}}`$ or $`\overline {C^{n}_{k}}`$ or $`{\displaystyle \left(\!\!{\binom {n}{k}}\!\!\right)}`$.<br>
+The **number** of all such **$k$-multisubsets** is denoted as $`{\displaystyle \overline {C(n,k)}}`$ or $`\overline {C^{n}_{k}}`$ or $`{\displaystyle \left({\binom {n}{k}}\right)}`$.<br>
 
 **Formula**:
 - $`{\displaystyle \overline{C^{n}_{k}} = C^{n+k-1}_{k}}`$
