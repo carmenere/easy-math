@@ -96,7 +96,7 @@ So, there are $2 * 3 * 4 = 24$ ways to choose **one** way $(a,b,c,d) \  \text{wh
 <br>
 
 ## Example 5
-Let $`X = \{1,2, ..., 100\}`$ and let $`S = \{(a,b,c): a,b,c ∈ X, a<b \ \text{and} \  b<c\}`$. **Find** $|S|$.<br>
+Let $`X = \{1,2, ..., 100\}`$ and let $`S = \{(a,b,c): a,b,c ∈ X, a \lt b \ \text{and} \  b \lt c\}`$. **Find** $|S|$.<br>
 
 We can divide it into **99 disjoint cases**: $a=1, a=2, ..., a=99$.<br>
 For every such case there are $(100 - a)$ choices for $b$ and $c$.
