@@ -83,4 +83,4 @@ In turn, the number of **all** such **binary codes** is equal to number of  **pe
 <br>
 
 **Finally**:
-- $`{\displaystyle \overline{C^{n}_{k}} = \frac{(k+n-1)!}{(n-1)!*k!} = C^{n+k-1}_{k}}`$
+- $`{\displaystyle \overline{C^{n}_{k}} = P^{k+n-1}_{(n-1),k} = \frac{(k+n-1)!}{(n-1)!*k!} = C^{n+k-1}_{k}}`$
