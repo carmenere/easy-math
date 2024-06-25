@@ -6,18 +6,18 @@ A **combination** is an **arrangement** of items in which **order doesn't matter
 ## Combinations without repetitions
 A **$k$-combination of $n$** *without repetitions* is a **subset** of set $A$ with *cardinality* $k$.<br>
 
-The **number** of all such **$k$-combination of $n$** is denoted as ${\displaystyle C(n,k)}$ or ${\displaystyle C^{n}_{k}}$ or ${\displaystyle \binom{n}{k}}$.<br>
+The **number** of all such **$k$-combination of $n$** is denoted as $`{\displaystyle C(n,k)}`$ or $`{\displaystyle C^{n}_{k}}`$ or $`{\displaystyle \binom{n}{k}}`$.<br>
 
 **Formula**:
-- ${\displaystyle C^{n}_{k} = \frac{P^{n}_{k}}{k!}}$
+- $`{\displaystyle C^{n}_{k} = \frac{P^{n}_{k}}{k!}}`$
 
 <br>
 
 **Proof**:<br>
 - Each **$k$-combination of $n$** *without repetitions* has $k!$ **permutations**:
-  - $P^{n}_{k} = C^{n}_{k} \times k!$
+  - $`P^{n}_{k} = C^{n}_{k} \times k!`$
 - So, it is obvious that:
-  - ${\displaystyle C^{n}_{k} = \frac{P^{n}_{k}}{k!}}$
+  - $`{\displaystyle C^{n}_{k} = \frac{P^{n}_{k}}{k!}}`$
 
 <br>
 
@@ -29,15 +29,14 @@ Since the *order doesn't matter* in combinations, it is obvious that $C^{n}_{k} 
 <br>
 
 ### Binomial coefficients
-The ${\displaystyle C^{n}_{k}}$ is also called **binomial coefficient**.<br>
+The $`{\displaystyle C^{n}_{k}}`$ is also called **binomial coefficient**.<br>
 
 <br>
 
 **Properties** of *binomial coefficients*:
-- ${\displaystyle C^{n}_{0} = C^{n}_{n}=1}$
-- ${\displaystyle C^{n}_{k}=C^{n-1}_{k-1}+C^{n-1}_{k}}$ for all integers $
-{\displaystyle n,k}$ such that ${\displaystyle 1\leq k<n}$
-- $`{\displaystyle \sum_{i=0}^{i=n} C^{n}_{k} = C^{n}_{0} + C^{n}_{1} + C^{n}_{2} + ... + C^{n}_{i} + ... + C^{n}_{n-1} + C^{n}_{n} = 2^n`}$
+- $`{\displaystyle C^{n}_{0} = C^{n}_{n}=1}`$
+- $`{\displaystyle C^{n}_{k}=C^{n-1}_{k-1}+C^{n-1}_{k}}`$ for all integers $`{\displaystyle n,k}`$ such that $`{\displaystyle 1\leq k<n}`$
+- $`{\displaystyle \sum_{i=0}^{i=n} C^{n}_{k} = C^{n}_{0} + C^{n}_{1} + C^{n}_{2} + ... + C^{n}_{i} + ... + C^{n}_{n-1} + C^{n}_{n} = 2^n}`$
 
 So, the number of **$k$-combination of $n$** for **all** $k∈[0;n]$ is the number of **all subsets** of a set $A$ of $n$ elements, i.e. it is **powerset**.<br>
 
@@ -45,10 +44,10 @@ So, the number of **$k$-combination of $n$** for **all** $k∈[0;n]$ is the numb
 
 ## Combinations with repetitions
 A **$k$-combination of $n$** *with repetitions* is a **multiset** with *cardinality* $k$ (aka **$k$-multisubset**) that consists of elements from $A$.<br>
-The **number** of all such **$k$-multisubsets** is denoted as ${\displaystyle \overline {C(n,k)}}$ or $\overline {C^{n}_{k}}$ or ${\displaystyle \left(\!\!{\binom {n}{k}}\!\!\right)}$.<br>
+The **number** of all such **$k$-multisubsets** is denoted as $`{\displaystyle \overline {C(n,k)}}`$ or $`\overline {C^{n}_{k}}`$ or $`{\displaystyle \left(\!\!{\binom {n}{k}}\!\!\right)}`$.<br>
 
 **Formula**:
-- ${\displaystyle \overline{C^{n}_{k}} = C^{n+k-1}_{k}}$
+- $`{\displaystyle \overline{C^{n}_{k}} = C^{n+k-1}_{k}}`$
 
 <br>
 

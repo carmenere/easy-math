@@ -17,7 +17,7 @@ A **permutation** is an **arrangement** of items in a **particular order**, i.e.
 ## Permutations without repetitions
 Consider a set $A = \{1,2,3, ..., n\}$.<br>
 A **$k$-permutation of $n$** *without repetitions* (aka **partial permutations**, **k-arrangements of n**) is **all ordered tuples** of length $k, \text{where} \  k \le n$ that consist of **distinct** elements from some set $A, |A| = n$. In other words it is the number of **k-tuples** that can be selected from set $A = \{1, 2, . . . , n\}$ **without** repeating elements.<br>
-The **number** of all such **$k$-permutation of $n$** is denoted as $P(n,k)$ or ${\displaystyle P^{n}_{k}}$.<br>
+The **number** of all such **$k$-permutation of $n$** is denoted as $P(n,k)$ or $`{\displaystyle P^{n}_{k}}`$.<br>
 
 When $k = n$, **$k$-permutation of $n$** is simply called **permutation of n**.<br>
 The **number** of all such **permutations of n** is denoted as $P(n)$ or $P_n$.<br>
@@ -25,8 +25,8 @@ The **number** of all such **permutations of n** is denoted as $P(n)$ or $P_n$.<
 <br>
 
 **Formulas**:
-- ${\displaystyle P^{n}_{k} = \frac{n!}{(n-k)!}}$
-- ${\displaystyle P_n = n!}$
+- $`{\displaystyle P^{n}_{k} = \frac{n!}{(n-k)!}}`$
+- $`{\displaystyle P_n = n!}`$
 
 <br>
 
@@ -85,7 +85,7 @@ So,
 <br>
 
 **Finally**:
-- ${\displaystyle P^{n}_{k} = \frac{n!}{(n-k)!}}$.
+- $`{\displaystyle P^{n}_{k} = \frac{n!}{(n-k)!}}`$.
 
 <br>
 
@@ -115,7 +115,7 @@ According **AP** we have $3 + 3 = 6$ total **3-tuples** of $\{a,b\} + \{c\} = \{
 
 ## Permutations with repetitions
 A **$k$-permutation of $n$** *with repetitions* is **all ordered pairs** of length $k, k \le n$ that consist of elements from $A, |A| = n$.<br>
-The **number** of such **$k$-permutation of $n$** is denoted as ${\displaystyle \overline{P}(n,k)}$ or ${\displaystyle \overline{P}^{n}_{k}}$.<br>
+The **number** of such **$k$-permutation of $n$** is denoted as $`{\displaystyle \overline{P}(n,k)}`$ or $`{\displaystyle \overline{P}^{n}_{k}}`$.<br>
 
 <br>
 
@@ -157,7 +157,7 @@ The **number of occurrences** of a specific element in $M$ is called its **multi
 <br>
 
 **Formula**:
-- ${\displaystyle P^{n}_{m_1,m_2,...,m_k} = \frac{n!}{m_1!*m_2!*...*m_k!}}$
+- $`{\displaystyle P^{n}_{m_1,m_2,...,m_k} = \frac{n!}{m_1!*m_2!*...*m_k!}}`$
   - where:
     - $m_1$, $m_2$, ..., $m_k$ are **multiplicities** of the elements of $M$
     - $n$ is the cardinality of $M$
