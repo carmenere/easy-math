@@ -118,3 +118,5 @@ The **rank of a matroid** $M$ is the size of **basis of a matroid** $M$.<br>
 In a **graphic matroid**, where the independent sets are the forests, the **bases** are called the **spanning forests** of the graph.<br>
 
 A **circuit** in a matroid $M$ is a **minimal dependent subset** of $E$. In other words, a **circuit** is a **dependent set** whose **proper subsets** are **all independent**.<br>
+
+Consider **uniform matroid** $`U_{r,n}`$. This matroid has rank $r$ and is called the **uniform matroid of rank** $r$ on an $n$**-element set**.<br>
