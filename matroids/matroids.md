@@ -47,6 +47,7 @@ such that $A ∪ {b} ∈ I$;
 
 $E$ is called the **ground set** of the matroid.<br>
 $I$ is the **collection of independent sets** of $E$.<br>
+A subset of the ground set $E$ that is **not** independent is called **dependent**.<br>
 
 <br>
 
@@ -105,3 +106,15 @@ If $`E = \{1, 2, 3\}`$ we have **eight non-isomorphic matroids**. They are:
 - $`I = \{∅, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{2, 3\}, \{1, 3\}\}`$
 - $`I = \{∅, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\}\}`$
 
+<br>
+
+## Basis
+A **basis of a matroid** is a **maximal independent set** of the matroid. In other words, the **basis** of a matroid is an independent set that is **not** contained in any other independent set. A  **basis** becomes **dependent** set by adding to it any element of $E$.<br>
+
+**Any** two bases of a matroid $M$ have the **same number** of elements.<br>
+
+The **rank of a matroid** $M$ is the size of **basis of a matroid** $M$.<br>
+
+In a **graphic matroid**, where the independent sets are the forests, the **bases** are called the **spanning forests** of the graph.<br>
+
+A **circuit** in a matroid $M$ is a **minimal dependent subset** of $E$. In other words, a **circuit** is a **dependent set** whose **proper subsets** are **all independent**.<br>
