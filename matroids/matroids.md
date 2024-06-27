@@ -129,7 +129,7 @@ Notes:
 
 The basis has a specialized name in several specialized kinds of matroids:
 - in a **graphic matroid** the **basis** is called the **spanning forest of the graph** $G$, so, the **bases** of **graphic matroid** is the set ${\mathcal {B}}$ of **all spanning forests of the graph** $G$:
-  - **spanning trees** of the graph $G=(V,E)$ are a subset of $E$, such that **all** the **vertices** are **covered**, but there are **no cycles**;
+  - **spanning trees** of the graph $G=(V,E)$ are a **subset** of $E$, such that **all** the **vertices** are **covered**, but there are **no cycles**;
   - it is obvious that the **spanning trees** are **maximally independent**, as if you add another edge, there will be a cycle;
 - in a **linear matroid** the **basis** is called **basis of the vector space**, the **cardinality** of **all bases** is called the **dimension** of the **vector space**.
 - in a **uniform matroid** the set ${\mathcal {B}}$ is the **set of all subsets of $E$ with cardinality exactly k**;
