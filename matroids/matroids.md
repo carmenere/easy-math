@@ -12,6 +12,7 @@
   - [Free matroid](#free-matroid)
   - [Uniform matroid](#uniform-matroid)
   - [Graphic matroid](#graphic-matroid)
+- [Rank](#rank)
 - [Non-isomorphic matroids](#non-isomorphic-matroids)
 
 <br>
@@ -126,14 +127,6 @@ Notes:
 
 <br>
 
-The **rank of a matroid** $M$ is the **size** of **any** its **basis**.<br>
-
-In a **graphic matroid**, where the independent sets are the forests, the **bases** are called the **spanning forests** of the graph.<br>
-
-Consider **uniform matroid** $`U_{r,n}`$. This matroid has rank $r$ and is called the **uniform matroid of rank** $r$ on an $n$**-element set**.<br>
-
-<br>
-
 The basis has a specialized name in several specialized kinds of matroids:
 - in a **graphic matroid**, where the *independent sets* are the **forests** in a given **graph**, the **bases** are called the **spanning forests of the graph**;
   - **spanning trees** of the graph $G=(V,E)$ are a subset of $E$, such that **all** the **vertices** are **covered**, but there are **no cycles**;
@@ -192,6 +185,12 @@ There are **3 cycles** in $G$, so the are 3 **circuits** in matroid: $`\mathcal 
 Note that this follows the **axioms of cycles**. For example, $e3$ is common to both $`\{e1,e2,e3\}`$ and $`\{e3,e5,e4\}`$, it means that $`\{e1,e2,e3\} ∪ \{e3,e5,e4\} \setminus {e3}`$ gives **another circuit** $`\{e1, e5, e4, e2\}`$.<br>
 
 The **independent sets** of **graphic matroid** corresponding to given graph $G$ is the collection of **all forests** in $G$: $I = \{∅, \{e1\}, \{e2\}, ..., \{e1, e2, e5\}...\}$.
+
+<br>
+
+# Rank
+The **rank of a matroid** $M$ is the **size** of **any** its **basis**.<br>
+Consider **uniform matroid** $`U_{r,n}`$. This matroid has **rank** $r$ and is called the **uniform matroid of rank** $r$ on an $n$**-element set**.<br>
 
 <br>
 
