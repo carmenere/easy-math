@@ -128,11 +128,11 @@ Notes:
 <br>
 
 The basis has a specialized name in several specialized kinds of matroids:
-- in a **graphic matroid**, where the *independent sets* are the **forests** in a given **graph**, the **bases** are called the **spanning forests of the graph**;
-  - **spanning trees** of the graph $G=(V,E)$ are a subset of $E$, such that **all** the **vertices** are **covered**, but there are **no cycles**;
-  - it is obvious that the **spanning trees** are **maximally independent**, as if you add another edge, there will be a cycle.
-- in a **linear matroid**, where the *independent sets* are the **linearly independent sets of vectors** in a given **vector space**, the **bases** are just called **bases of the vector space**, the **cardinality** of **all bases** is called the **dimension** of the **vector space**.
-- in a **uniform matroid**, where the *independent sets* are all sets with cardinality at most $k$, the **bases** are **all sets with cardinality exactly k**;
+- in a **graphic matroid** the **basis** is called the **spanning forest of the graph** $G$, so, the **bases** of **graphic matroid** is the set ${\mathcal {B}}$ of **all spanning forests of the graph** $G$:
+  - **spanning trees** of the graph $G=(V,E)$ are a **subset** of $E$, such that **all** the **vertices** are **covered**, but there are **no cycles**;
+  - it is obvious that the **spanning trees** are **maximally independent**, as if you add another edge, there will be a cycle;
+- in a **linear matroid** the **basis** is called **basis of the vector space**, the **cardinality** of **all bases** is called the **dimension** of the **vector space**.
+- in a **uniform matroid** the set ${\mathcal {B}}$ is the **set of all subsets of $E$ with cardinality exactly k**;
 - in a **free matroid** there is the **only one basis** and it is **ground set itself**, $E$;
 
 <br>
