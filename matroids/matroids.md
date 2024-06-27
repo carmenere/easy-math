@@ -180,11 +180,9 @@ Consider the graph G:<br>
 
 The **ground set** of **graphic matroid** corresponding to given graph $G$ is $`E = \{e1, e2, e3, e4, e5\}`$.<br>
 
-There are **3 cycles** in $G$, so the are 3 **circuits** in matroid: $`\mathcal {C} = \{\{e1,e2,e3\}, \{e3,e5,e4\}, \{e1,e2,e5,e4\}\}`$.<br>
+There are **3 cycles** in $G$, so the are 3 **circuits** in matroid: $`\mathcal {C} = \{\{e1,e2,e3\}, \{e3,e5,e4\}, \{e1,e2,e5,e4\}\}`$. Note that this follows the **axioms of cycles**. For example, $e3$ is common to both $`\{e1,e2,e3\}`$ and $`\{e3,e5,e4\}`$, it means that $`\{e1,e2,e3\} ∪ \{e3,e5,e4\} \setminus {e3}`$ gives **another circuit** $`\{e1, e5, e4, e2\}`$.<br>
 
-Note that this follows the **axioms of cycles**. For example, $e3$ is common to both $`\{e1,e2,e3\}`$ and $`\{e3,e5,e4\}`$, it means that $`\{e1,e2,e3\} ∪ \{e3,e5,e4\} \setminus {e3}`$ gives **another circuit** $`\{e1, e5, e4, e2\}`$.<br>
-
-The **independent sets** of **graphic matroid** corresponding to given graph $G$ is the collection of **all forests** in $G$: $I = \{∅, \{e1\}, \{e2\}, ..., \{e1, e2, e5\}...\}$.
+The **independent sets** $\mathcal {F}$ of **graphic matroid** corresponding to given graph $G$ is the collection of **all forests** in $G$: $`\mathcal {F} = \{∅, \{e1\}, \{e2\}, ..., \{e1, e2, e5\}...\}`$.
 
 <br>
 
