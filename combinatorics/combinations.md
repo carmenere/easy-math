@@ -1,3 +1,13 @@
+# Table of contents
+- [Table of contents](#table-of-contents)
+- [Combinations](#combinations)
+  - [Combinations without repetitions](#combinations-without-repetitions)
+    - [Binomial coefficients](#binomial-coefficients)
+  - [Combinations with repetitions](#combinations-with-repetitions)
+    - [Proof](#proof)
+
+<br>
+
 # Combinations
 A **combination** is an **arrangement** of items in which **order doesn't matter**.<br>
 
