@@ -1,3 +1,21 @@
+# Table of contents
+- [Table of contents](#table-of-contents)
+- [k-tuples](#k-tuples)
+- [Permutations](#permutations)
+  - [Permutations without repetitions](#permutations-without-repetitions)
+  - [Proof](#proof)
+    - [Trivial case](#trivial-case)
+    - [More general case](#more-general-case)
+  - [Examples](#examples)
+  - [Permutations with repetitions](#permutations-with-repetitions)
+    - [Proof](#proof-1)
+    - [Trivial case](#trivial-case-1)
+    - [More general case](#more-general-case-1)
+- [Permutations of multisets](#permutations-of-multisets)
+  - [Number of ways to put objects into bins](#number-of-ways-to-put-objects-into-bins)
+
+<br>
+
 # k-tuples
 A **tuple** is an **ordered collection** of elements taken from a set and may have **duplicate** elements.<br>
 A **tuple** of size $k$ (**tuple** of $k$ elements) is called an $k-tuple$.<br>

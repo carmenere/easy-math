@@ -1,3 +1,10 @@
+# Table of contents
+- [Table of contents](#table-of-contents)
+- [Disjoint union](#disjoint-union)
+    - [Example](#example)
+
+<br>
+
 # Disjoint union
 **Disjoint union** of the sets `A` and `B` is the **new set** formed from the elements of `A` and `B` **labelled** (**indexed**) with the name of the set from which they come.<br>
 Denoted as `A ⊔ B`.<br>

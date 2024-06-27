@@ -1,3 +1,18 @@
+# Table of contents
+- [Table of contents](#table-of-contents)
+- [Counting principles](#counting-principles)
+- [In the set theory](#in-the-set-theory)
+  - [AP](#ap)
+  - [MP](#mp)
+- [Examples](#examples)
+  - [Example 1](#example-1)
+  - [Example 2](#example-2)
+  - [Example 3](#example-3)
+  - [Example 4](#example-4)
+  - [Example 5](#example-5)
+
+<br>
+
 # Counting principles
 - **The addition principle** (aka **AP**, **the rule of sum**):
   - If some event $A$ has $m$ possible outcomes and **another independent** event $B$ has $k$ possible outcomes, then there are $m + n$ possible outcomes of exactly **one** event $A$ or event $B$.
