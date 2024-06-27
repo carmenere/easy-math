@@ -101,7 +101,7 @@ A **matroid** $M$ is a pair $(E,\mathcal {C})$ where:
 <br>
 
 Set $\mathcal {C}$ **must** satisfy the following properties:
-1. If $`C_1`$ and $`C_2`$ are **distinct** members of ${\mathcal {C}}$ and $`e ∈ C1 ∩ C2$, then $∃ C'∈\mathcal {C}`$ such that $`C'=(C_1 ∪ C_2 ) \setminus {e}`$;
+1. If $`C_1`$ and $`C_2`$ are **distinct** members of ${\mathcal {C}}$ and $`e ∈ C_1 ∩ C_2$, then $∃ C'∈\mathcal {C}`$ such that $`C'=(C_1 ∪ C_2 ) \setminus {e}`$;
 
 <br>
 
