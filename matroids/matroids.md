@@ -17,7 +17,7 @@
 <br>
 
 # Linear combinations
-If $`{\displaystyle \mathbf {v} _{1},\mathbf {v} _{2},\dots ,\mathbf {v} _{k}}`$ are **vectors** and $a_1$,...,$a_n$ are **scalars**, then the **linear combination** of those **vectors** is $`{\displaystyle a_{1}\mathbf {v} _{1}+a_{2}\mathbf {v} _{2}+a_{3}\mathbf {v} _{3}+\cdots +a_{n}\mathbf {v} _{n}}`$.<br>
+If $`{\displaystyle \mathbf {v} _{1},\mathbf {v} _{2},\dots ,\mathbf {v} _{k}}`$ are **vectors** and $`a_1`$ ,..., $`a_n`$ are **scalars**, then the **linear combination** of those **vectors** is $`{\displaystyle a_{1}\mathbf {v} _{1}+a_{2}\mathbf {v} _{2}+a_{3}\mathbf {v} _{3}+\cdots +a_{n}\mathbf {v} _{n}}`$.<br>
 
 <br>
 
@@ -101,7 +101,7 @@ A **matroid** $M$ is a pair $(E,\mathcal {C})$ where:
 <br>
 
 Set $\mathcal {C}$ **must** satisfy the following properties:
-1. If $C_1$ and $C_2$ are **distinct** members of ${\mathcal {C}}$ and $e ∈ C1 ∩ C2$, then $∃ C'∈\mathcal {C}$ such that $C'=(C_1 ∪ C_2 ) \setminus {e}$;
+1. If $`C_1`$ and $`C_2`$ are **distinct** members of ${\mathcal {C}}$ and $`e ∈ C1 ∩ C2$, then $∃ C'∈\mathcal {C}`$ such that $`C'=(C_1 ∪ C_2 ) \setminus {e}`$;
 
 <br>
 
@@ -185,7 +185,7 @@ The **set of all circuits** $\mathcal {C}$ of **graphic matroid** is the **colle
 Consider the graph G:<br>
 ![matroid-1](/img/matroid-1.png)
 
-The **ground set** of **graphic matroid** corresponding to given graph $G$ is $E = `\{e1, e2, e3, e4, e5\}`$.<br>
+The **ground set** of **graphic matroid** corresponding to given graph $G$ is $`E = \{e1, e2, e3, e4, e5\}`$.<br>
 
 There are **3 cycles** in $G$, so the are 3 **circuits** in matroid: $`\mathcal {C} = \{\{e1,e2,e3\}, \{e3,e5,e4\}, \{e1,e2,e5,e4\}\}`$.<br>
 
